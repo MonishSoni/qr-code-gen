@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR Code Generator</title>
+    <link rel="icon" href="favicon.png" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="container">
+         
+          <img src="favicon.png" alt="" />
+          <h1>QR <span>Code</span>  Generator</h1>
+
+        <div>
+          <canvas id="canvas"></canvas>
+        </div>
+
+        <input id="message" type="text" placeholder="Enter Your Message" />
+        <div>
+            <button class="btn" id="gen">Generate</button>
+            <button class="btn" id="dow">Download</button>
+        </div>
+        <div class="alertp">
+          <p id="errormsg"></p>
+        </div>
+      </div>
+
+    </section>
+
+    <!--Js -->
+
+    <script src="qrcode.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
